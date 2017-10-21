@@ -13,7 +13,7 @@ def window_transform_series(series, window_size):
     X = []
     y = []
 
-    for idx,each in enumerate(series):
+    for idx,v in enumerate(series):
         if (idx + window_size) < len(series):
             X.append(series[idx:idx+window_size])
             y.append(series[idx+window_size])
